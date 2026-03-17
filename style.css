@@ -173,3 +173,23 @@ footer { text-align: center; padding: 20px; background: var(--dark); color: whit
     .nav-links { display: none; }
     .btn-secondary { margin-left: 0; margin-top: 10px; }
 }
+
+/* פריסה לטלפונים (מסכים קטנים מ-768 פיקסלים) */
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr; /* הופך לעמודה אחת */
+        text-align: center; /* ממרכז את הטקסט */
+    }
+
+    .nav-links {
+        display: none; /* בדרך כלל בטלפון מחביאים את התפריט הרגיל ושמים תפריט המבורגר */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* מקטין את הכותרת שלא תצא מהמסך */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* השירותים יוצגו אחד מתחת לשני */
+    }
+}
